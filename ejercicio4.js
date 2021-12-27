@@ -120,6 +120,19 @@ const tree = {
   ],
 };
 
+function findMax(tree){
+  if (tree){
+    let result = inOrder (tree);
+    if (result && result > tree.value){
+      return result;
+    }else{
+      return tree.value;
+    }
+  }
+}
+
+console.log(findMax(tree));
+
 // Hallar el máximo valor del árbol: 54
 // Todos los números son mayores que 0.
 
